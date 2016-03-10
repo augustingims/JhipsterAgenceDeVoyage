@@ -1,0 +1,50 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "secretaire",
+            "otherEntityName": "secretaire",
+            "relationshipType": "one-to-one",
+            "otherEntityField": "nom_secretaire",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "client"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "ticket",
+            "otherEntityName": "ticket",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "client"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "num_cni",
+            "fieldType": "Long"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "nom_client",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "prenom_client",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "profession",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "date_delivrance",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "changelogDate": "20160222180228",
+    "dto": "no",
+    "pagination": "pager"
+}

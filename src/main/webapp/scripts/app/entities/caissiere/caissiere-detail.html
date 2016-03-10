@@ -1,0 +1,54 @@
+
+<div style="background-color: whitesmoke;">
+    <h2><span translate="agenceDeVoyageApp.caissiere.detail.title">Caissiere</span> {{caissiere.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="agenceDeVoyageApp.caissiere.nom_caissiere">Nom_caissiere</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{caissiere.nom_caissiere}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="agenceDeVoyageApp.caissiere.prenom_caissiere">Prenom_caissiere</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{caissiere.prenom_caissiere}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="agenceDeVoyageApp.caissiere.tel_caissiere">Tel_caissiere</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{caissiere.tel_caissiere}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="agenceDeVoyageApp.caissiere.adresse_caissiere">Adresse_caissiere</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{caissiere.adresse_caissiere}}</span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

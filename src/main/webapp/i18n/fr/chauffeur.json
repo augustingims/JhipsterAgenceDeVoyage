@@ -1,0 +1,23 @@
+{
+    "agenceDeVoyageApp": {
+        "chauffeur" : {
+            "home": {
+                "title": "Chauffeurs",
+                "createLabel": "Créer un nouveau Chauffeur",
+                "createOrEditLabel": "Créer ou éditer un Chauffeur"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Chauffeur {{ id }} ?"
+            },
+            "detail": {
+                "title": "Chauffeur"
+            },
+            "nom_chauffeur": "Nom_chauffeur",
+            "prenom_chauffeur": "Prenom_chauffeur",
+            "tel_chauffeur": "Tel_chauffeur",
+            "adresse_chauffeur": "Adresse_chauffeur",
+            "voyage": "Voyage"
+        }
+    }
+}
+

@@ -1,0 +1,63 @@
+<div class="section section-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Listes Des Tickets</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Pricing Table -->
+<div class="section">
+    <div class="container">
+        <h2>Tickets</h2>
+        <div class="row">
+            <!-- Pricing Plans Wrapper -->
+            <div class="pricing-wrapper col-md-12">
+                <!-- Pricing Plan -->
+                <div class="pricing-plan" ng-repeat="ticket in imprimes">
+                    <!-- Pricing Plan Ribbon -->
+                    <div class="ribbon-wrapper">
+                        <div ng-class="getRuban('{{ticket.nature}}')">{{ticket.nature}}</div>
+                    </div>
+                    <h2 class="pricing-plan-title">Ticket Voyage</h2>
+                    <p class="pricing-plan-price">{{ticket.prix}}&nbsp;<span>FCFA</span></p>
+                    <ul class="pricing-plan-features">
+                        <li>
+                            <strong>Name:</strong>
+                            {{ticket.client}}
+                        </li>
+                        <li>
+                            <strong>Ville Depart:</strong>
+                            {{ticket.ville_depart}}
+                        </li>
+                        <li>
+                            <strong>Ville Arrivee:</strong>
+                            {{ticket.ville_arrivee}}
+                        </li>
+                        <li>
+                            <strong>Heure Depart:</strong>
+                            {{ticket.heure_depart}}
+                        </li>
+                        <li>
+                            <strong>Voyage:</strong>
+                            {{ticket.date}}
+                        </li>
+                        <li>
+
+                            <strong>Bus:</strong>
+                            {{ticket.nom_bus}}
+                        </li>
+                        <li>
+                            <strong>Place:</strong>
+                            {{ticket.numero}}
+                        </li>
+                    </ul>
+                    <a href="#" class="btn">Imprimer</a>
+                </div>
+            </div>
+            <!-- End Pricing Plans Wrapper -->
+        </div>
+    </div>
+</div>
+<!-- End Pricing Table -->

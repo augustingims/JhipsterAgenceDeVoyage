@@ -1,0 +1,48 @@
+<div class="section section-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1> Information Client Ticket</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-8">
+                        <div class="basic-login">
+                            <form role="form">
+                                <div class="form-group">
+                                    <label for="register-username"><i class="icon-user"></i> <b>Nom Client</b></label>
+                                    <input class="form-control" ng-model="client.nom_client" id="register-username" type="text" placeholder="Nom Client">
+                                </div>
+                                <div class="form-group">
+                                    <label for="register-password"><i class="icon-lock"></i> <b>Prenom Client</b></label>
+                                    <input class="form-control" ng-model="client.prenom_client" id="register-password" type="text" placeholder="Prenom Client">
+                                </div>
+                                <div class="form-group">
+                                    <label for="register-password2"><i class="icon-lock"></i> <b>Numero CNI Client</b></label>
+                                    <input class="form-control" ng-model="client.num_cni" id="register-password2" type="text" placeholder="Numero CNI Client">
+                                </div>
+                                <div class="form-group">
+                                    <label for="register-password3"><i class="icon-lock"></i> <b>Date Delivrance CNI</b></label>
+                                    <input class="form-control" ng-model="client.date_delivrance" id="register-password3" type="text" placeholder="Date Delivrance CNI">
+                                </div>
+                                <div class="form-group">
+                                    <label for="register-password4"><i class="icon-lock"></i> <b>Profession</b></label>
+                                    <input class="form-control" ng-model="client.profession" id="register-password4" type="text" placeholder="Profession">
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn pull-right" ng-click="save()">Register</button>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-sm-2"></div>
+                </div>
+            </div>
+        </div>

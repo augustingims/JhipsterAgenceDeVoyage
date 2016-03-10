@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <include file="classpath:config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20160222175217_added_entity_Responsable.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20160222175822_added_entity_Secretaire.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20160222180228_added_entity_Client.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20160222181713_added_entity_Ticket.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20160222181949_added_entity_Caissiere.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20160222182529_added_entity_Voyage.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20160222183108_added_entity_Bus.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20160222183548_added_entity_Chauffeur.xml" relativeToChangelogFile="false"/>
+    <!-- JHipster will add liquibase changelogs here -->
+</databaseChangeLog>

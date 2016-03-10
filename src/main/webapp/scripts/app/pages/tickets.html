@@ -1,0 +1,82 @@
+<div class="section section-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1> Creation du Ticket de Mr {{name_client}}</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="basic-login">
+                            <div class="row">
+                            <form role="form" ng-submit="save()">
+                                <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label><i class="icon-user"></i> <b>Nature</b></label>
+                                    <select class="form-control" ng-model="ticketclient.nature">
+                                        <option value=""></option>
+                                        <option value="VIP">VIP</option>
+                                        <option value="Standard">Standard</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label><i class="icon-lock"></i> <b>Prix</b></label>
+                                    <input class="form-control" ng-model="ticketclient.prix" type="text" placeholder="Prix">
+                                </div>
+                                <div class="form-group">
+                                    <label><i class="icon-lock"></i> <b>Numero siege</b></label>
+                                    <input class="form-control" ng-model="ticketclient.numero" type="text" placeholder="Numero siege">
+                                </div>
+                                <div class="form-group">
+                                    <label><i class="icon-lock"></i> <b>Bus</b></label>
+                                    <select class="form-control"  ng-change="limit(voyageclient.nom_bus)" ng-options="bus.nom_bus as bus.nom_bus for bus in allbus" ng-model="voyageclient.nom_bus">
+                                        <option value="">Select Bus...</option>
+                                    </select>
+                                </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label><i class="icon-user"></i> <b>Date Du Voyage</b></label>
+                                        <input class="form-control" ng-model="voyageclient.date" type="text" placeholder="Date Du Voyage">
+                                    </div>
+                                    <div class="form-group">
+                                        <label><i class="icon-user"></i> <b>Ville Depart</b></label>
+                                        <input class="form-control"  ng-model="voyageclient.ville_depart" type="text" placeholder="Ville Depart">
+                                    </div>
+                                    <div class="form-group">
+                                        <label><i class="icon-lock"></i> <b>Ville Arrivee</b></label>
+                                        <input class="form-control" ng-model="voyageclient.ville_arrivee" type="text" placeholder="Ville Arrivee">
+                                    </div>
+                                    <div class="form-group">
+                                        <label><i class="icon-lock"></i> <b>Heure Depart</b></label>
+                                        <input class="form-control" ng-model="voyageclient.heure_depart" type="text" placeholder="Heure Depart">
+                                    </div>
+                                    <div class="form-group">
+                                        <label><i class="icon-lock"></i> <b>Chauffeur</b></label>
+                                        <select class="form-control" ng-options="chauffeur.nom_chauffeur as chauffeur.nom_chauffeur for chauffeur in allchauffeur" ng-model="voyageclient.nom_chauffeur">
+                                            <option value=""> Select chauffeur...</option>
+                                        </select>
+                                </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn pull-right">Register</button>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 social-login">
+                        <p>Parcourer le Monde avec nous Mr {{name_client}}</p>
+                        <div class="grid_4">
+                            <img src="../../images/img.jpg" alt="" style="height: 350px" class="img_inner fleft">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>

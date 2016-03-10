@@ -1,0 +1,25 @@
+{
+    "agenceDeVoyageApp": {
+        "client" : {
+            "home": {
+                "title": "Clients",
+                "createLabel": "Créer un nouveau Client",
+                "createOrEditLabel": "Créer ou éditer un Client"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Client {{ id }} ?"
+            },
+            "detail": {
+                "title": "Client"
+            },
+            "num_cni": "Num_cni",
+            "nom_client": "Nom_client",
+            "prenom_client": "Prenom_client",
+            "profession": "Profession",
+            "date_delivrance": "Date_delivrance",
+            "secretaire": "Secretaire",
+            "ticket": "Ticket"
+        }
+    }
+}
+

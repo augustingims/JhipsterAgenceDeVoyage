@@ -1,0 +1,23 @@
+{
+    "agenceDeVoyageApp": {
+        "responsable" : {
+            "home": {
+                "title": "Responsables",
+                "createLabel": "Créer un nouveau Responsable",
+                "createOrEditLabel": "Créer ou éditer un Responsable"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Responsable {{ id }} ?"
+            },
+            "detail": {
+                "title": "Responsable"
+            },
+            "nom_responsable": "Nom_responsable",
+            "prenom_responsable": "Prenom_responsable",
+            "tel_responsable": "Tel_responsable",
+            "adresse_responsable": "Adresse_responsable",
+            "secretaire": "Secretaire"
+        }
+    }
+}
+

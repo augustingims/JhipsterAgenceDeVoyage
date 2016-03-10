@@ -1,0 +1,22 @@
+{
+    "agenceDeVoyageApp": {
+        "bus" : {
+            "home": {
+                "title": "Buss",
+                "createLabel": "Créer un nouveau Bus",
+                "createOrEditLabel": "Créer ou éditer un Bus"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Bus {{ id }} ?"
+            },
+            "detail": {
+                "title": "Bus"
+            },
+            "nom_bus": "Nom_bus",
+            "immatriculation": "Immatriculation",
+            "marque": "Marque",
+            "voyage": "Voyage"
+        }
+    }
+}
+

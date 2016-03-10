@@ -1,0 +1,39 @@
+<div class="section section-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Tickets Reservés</h1>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Shopping Cart Items -->
+                        <table class="shopping-cart">
+                            <!-- Shopping Cart Item -->
+                            <tr ng-repeat="client in reserver">
+                                <!-- Shopping Cart Item Image -->
+                                <td class="image"><a href="">
+                                    <img src="../../images/avatar.gif" alt="Item Name" style="width: 60px;height: 60px;"></a></td>
+                                <!-- Shopping Cart Item Description & Features -->
+                                <td>
+                                    <div class="cart-item-title"><a href="">{{client.nom_client}}   {{client.prenom_client}}</a></div>
+                                    <div class="feature color">
+                                        Num_CNI : {{client.num_cni}}
+                                    </div>
+                                    <div class="feature">Date Delivrance: <b>{{client.date_delivrance}}</b></div>
+                                </td>
+                                <td class="actions">
+                                    <a href="#/tickets/{{client.id}}/{{client.nom_client}}" class="btn btn-xs btn-grey"><i class="glyphicon glyphicon-pencil"></i></a>
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- End Shopping Cart Items -->
+                    </div>
+                </div>
+            </div>
+        </div>
+

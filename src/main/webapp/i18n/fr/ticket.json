@@ -1,0 +1,25 @@
+{
+    "agenceDeVoyageApp": {
+        "ticket" : {
+            "home": {
+                "title": "Tickets",
+                "createLabel": "Créer un nouveau Ticket",
+                "createOrEditLabel": "Créer ou éditer un Ticket"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Ticket {{ id }} ?"
+            },
+            "detail": {
+                "title": "Ticket"
+            },
+            "nature": "Nature",
+            "type": "Type",
+            "prix": "Prix",
+            "numero": "Numero",
+            "client": "Client",
+            "caissiere": "Caissiere",
+            "voyage": "Voyage"
+        }
+    }
+}
+

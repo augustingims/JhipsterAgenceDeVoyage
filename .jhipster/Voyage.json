@@ -1,0 +1,59 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "ticket",
+            "otherEntityName": "ticket",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "voyage"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "bus",
+            "otherEntityName": "bus",
+            "relationshipType": "one-to-one",
+            "otherEntityField": "nom_bus",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "voyage"
+        },
+        {
+            "relationshipId": 3,
+            "relationshipName": "chauffeur",
+            "otherEntityName": "chauffeur",
+            "relationshipType": "one-to-one",
+            "otherEntityField": "nom_chauffeur",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "voyage"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "date",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "ville_depart",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "ville_arrivee",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "heure_depart",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "heure_arrivee",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20160222182529",
+    "dto": "no",
+    "pagination": "pager"
+}

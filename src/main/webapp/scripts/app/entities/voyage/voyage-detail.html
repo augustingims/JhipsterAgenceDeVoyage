@@ -1,0 +1,78 @@
+
+<div style="background-color: whitesmoke;">
+    <h2><span translate="agenceDeVoyageApp.voyage.detail.title">Voyage</span> {{voyage.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="agenceDeVoyageApp.voyage.date">Date</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{voyage.date | date:'mediumDate'}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="agenceDeVoyageApp.voyage.ville_depart">Ville_depart</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{voyage.ville_depart}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="agenceDeVoyageApp.voyage.ville_arrivee">Ville_arrivee</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{voyage.ville_arrivee}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="agenceDeVoyageApp.voyage.heure_depart">Heure_depart</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{voyage.heure_depart}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="agenceDeVoyageApp.voyage.heure_arrivee">Heure_arrivee</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{voyage.heure_arrivee}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="agenceDeVoyageApp.voyage.bus">bus</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="bus.detail({id:voyage.bus.id})">{{voyage.bus.nom_bus}}</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="agenceDeVoyageApp.voyage.chauffeur">chauffeur</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="chauffeur.detail({id:voyage.chauffeur.id})">{{voyage.chauffeur.nom_chauffeur}}</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

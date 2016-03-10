@@ -1,0 +1,68 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myTicketLabel" translate="agenceDeVoyageApp.ticket.home.createOrEditLabel">Create or edit a Ticket</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="ticket.id" readonly />
+        </div>
+        <div class="form-group">
+            <label translate="agenceDeVoyageApp.ticket.nature" for="field_nature">Nature</label>
+            <input type="text" class="form-control" name="nature" id="field_nature"
+                    ng-model="ticket.nature"
+                     />
+        </div>
+        <div class="form-group">
+            <label translate="agenceDeVoyageApp.ticket.type" for="field_type">Type</label>
+            <input type="text" class="form-control" name="type" id="field_type"
+                    ng-model="ticket.type"
+                     />
+        </div>
+        <div class="form-group">
+            <label translate="agenceDeVoyageApp.ticket.prix" for="field_prix">Prix</label>
+            <input type="number" class="form-control" name="prix" id="field_prix"
+                    ng-model="ticket.prix"
+                     />
+        </div>
+        <div class="form-group">
+            <label translate="agenceDeVoyageApp.ticket.numero" for="field_numero">Numero</label>
+            <input type="number" class="form-control" name="numero" id="field_numero"
+                    ng-model="ticket.numero"
+                     />
+        </div>
+
+        <div class="form-group">
+            <label translate="agenceDeVoyageApp.ticket.client" for="field_client">client</label>
+            <select class="form-control" id="field_client" name="client" ng-model="ticket.client" ng-options="client as client.nom_client for client in clients | orderBy:'id' track by client.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label translate="agenceDeVoyageApp.ticket.caissiere" for="field_caissiere">caissiere</label>
+            <select class="form-control" id="field_caissiere" name="caissiere" ng-model="ticket.caissiere" ng-options="caissiere as caissiere.nom_caissiere for caissiere in caissieres | orderBy:'id' track by caissiere.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label translate="agenceDeVoyageApp.ticket.voyage" for="field_voyage">voyage</label>
+            <select class="form-control" id="field_voyage" name="voyage" ng-model="ticket.voyage" ng-options="voyage as voyage.date for voyage in voyages | orderBy:'id' track by voyage.id">
+                <option value=""></option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || editForm.$submitted" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

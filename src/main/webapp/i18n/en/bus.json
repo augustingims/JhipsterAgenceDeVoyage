@@ -1,0 +1,24 @@
+{
+    "agenceDeVoyageApp": {
+        "bus" : {
+            "home": {
+                "title": "Buss",
+                "createLabel": "Create a new Bus",
+                "createOrEditLabel": "Create or edit a Bus"
+            },
+            "created": "A new Bus is created with identifier {{ param }}",
+            "updated": "A Bus is updated with identifier {{ param }}",
+            "deleted": "A Bus is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Bus {{ id }}?"
+            },
+            "detail": {
+                "title": "Bus"
+            },
+            "nom_bus": "Nom_bus",
+            "immatriculation": "Immatriculation",
+            "marque": "Marque",
+            "voyage": "Voyage"
+        }
+    }
+}

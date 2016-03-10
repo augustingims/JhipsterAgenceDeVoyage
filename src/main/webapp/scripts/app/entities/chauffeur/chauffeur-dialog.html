@@ -1,0 +1,50 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myChauffeurLabel" translate="agenceDeVoyageApp.chauffeur.home.createOrEditLabel">Create or edit a Chauffeur</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="chauffeur.id" readonly />
+        </div>
+        <div class="form-group">
+            <label translate="agenceDeVoyageApp.chauffeur.nom_chauffeur" for="field_nom_chauffeur">Nom_chauffeur</label>
+            <input type="text" class="form-control" name="nom_chauffeur" id="field_nom_chauffeur"
+                    ng-model="chauffeur.nom_chauffeur"
+                     />
+        </div>
+        <div class="form-group">
+            <label translate="agenceDeVoyageApp.chauffeur.prenom_chauffeur" for="field_prenom_chauffeur">Prenom_chauffeur</label>
+            <input type="text" class="form-control" name="prenom_chauffeur" id="field_prenom_chauffeur"
+                    ng-model="chauffeur.prenom_chauffeur"
+                     />
+        </div>
+        <div class="form-group">
+            <label translate="agenceDeVoyageApp.chauffeur.tel_chauffeur" for="field_tel_chauffeur">Tel_chauffeur</label>
+            <input type="number" class="form-control" name="tel_chauffeur" id="field_tel_chauffeur"
+                    ng-model="chauffeur.tel_chauffeur"
+                     />
+        </div>
+        <div class="form-group">
+            <label translate="agenceDeVoyageApp.chauffeur.adresse_chauffeur" for="field_adresse_chauffeur">Adresse_chauffeur</label>
+            <input type="text" class="form-control" name="adresse_chauffeur" id="field_adresse_chauffeur"
+                    ng-model="chauffeur.adresse_chauffeur"
+                     />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || editForm.$submitted" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

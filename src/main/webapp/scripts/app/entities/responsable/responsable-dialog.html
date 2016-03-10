@@ -1,0 +1,50 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myResponsableLabel" translate="agenceDeVoyageApp.responsable.home.createOrEditLabel">Create or edit a Responsable</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="responsable.id" readonly />
+        </div>
+        <div class="form-group">
+            <label translate="agenceDeVoyageApp.responsable.nom_responsable" for="field_nom_responsable">Nom_responsable</label>
+            <input type="text" class="form-control" name="nom_responsable" id="field_nom_responsable"
+                    ng-model="responsable.nom_responsable"
+                     />
+        </div>
+        <div class="form-group">
+            <label translate="agenceDeVoyageApp.responsable.prenom_responsable" for="field_prenom_responsable">Prenom_responsable</label>
+            <input type="text" class="form-control" name="prenom_responsable" id="field_prenom_responsable"
+                    ng-model="responsable.prenom_responsable"
+                     />
+        </div>
+        <div class="form-group">
+            <label translate="agenceDeVoyageApp.responsable.tel_responsable" for="field_tel_responsable">Tel_responsable</label>
+            <input type="number" class="form-control" name="tel_responsable" id="field_tel_responsable"
+                    ng-model="responsable.tel_responsable"
+                     />
+        </div>
+        <div class="form-group">
+            <label translate="agenceDeVoyageApp.responsable.adresse_responsable" for="field_adresse_responsable">Adresse_responsable</label>
+            <input type="text" class="form-control" name="adresse_responsable" id="field_adresse_responsable"
+                    ng-model="responsable.adresse_responsable"
+                     />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || editForm.$submitted" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

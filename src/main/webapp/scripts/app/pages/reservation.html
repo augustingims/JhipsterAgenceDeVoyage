@@ -1,0 +1,108 @@
+<!-- Page Title -->
+<div class="section section-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Reservation de Ticket</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5">
+                <div class="basic-login">
+                    <form class="form" role="form">
+                        <div class="form-group">
+                            <label for="register-username"><i class="icon-user"></i> <b>Nom Client</b></label>
+                            <input class="form-control" ng-model="client.nom_client" id="register-username" type="text" placeholder="Nom Client">
+                        </div>
+                        <div class="form-group">
+                            <label for="register-password"><i class="icon-lock"></i> <b>Prenom Client</b></label>
+                            <input class="form-control" ng-model="client.prenom_client" id="register-password" type="text" placeholder="Prenom Client">
+                        </div>
+                        <div class="form-group">
+                            <label for="register-password2"><i class="icon-lock"></i> <b>Numero CNI Client</b></label>
+                            <input class="form-control" ng-model="client.num_cni" id="register-password2" type="text" placeholder="Numero CNI Client">
+                        </div>
+                        <div class="form-group">
+                            <label for="register-password3"><i class="icon-lock"></i> <b>Date Delivrance CNI</b></label>
+                            <input class="form-control" ng-model="client.date_delivrance" id="register-password3" type="text" placeholder="Date Delivrance CNI">
+                        </div>
+                        <div class="form-group">
+                            <label for="register-password4"><i class="icon-lock"></i> <b>Profession</b></label>
+                            <input class="form-control" ng-model="client.profession" id="register-password4" type="text" placeholder="Profession">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn pull-right" ng-click="save()">Reservation</button>
+                            <div class="clearfix"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-sm-7 social-login">
+                <p>Processus de Reservation de Ticket</p>
+                <table class="events-list">
+                    <tr>
+                        <td>
+                            <div class="event-date">
+                                <div class="event-day">Infos</div>
+                                <div class="event-month">NB</div>
+                            </div>
+                        </td>
+                        <td>
+                            Le client qui souhaite réserver son ticket de bus, a deux possibilités :
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="event-date">
+                                <div class="event-day">1</div>
+                                <div class="event-month">PROCEDURE</div>
+                            </div>
+                        </td>
+                        <td>
+                            La première qui est de se rendre directement à l’agence puis suivre la procédure précédente.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="event-date">
+                                <div class="event-day">2</div>
+                                <div class="event-month">PROCEDURE</div>
+                            </div>
+                        </td>
+                        <td>
+                            La deuxième qui est de se rendre sur le site de l’agence et de suivre les différentes instructions relatives pour la réservation d’un ticket de bus.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="event-date">
+                                <div class="event-day">Etape 1</div>
+                                <div class="event-month">PROCEDURE 2</div>
+                            </div>
+                        </td>
+                        <td>
+                            Le client devra remplir le formulaire qui se trouve à sa gauche à l'aide de sa CNI et Cliquer sur Reservation.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="event-date">
+                                <div class="event-day">Etape 2</div>
+                                <div class="event-month">PROCEDURE 2</div>
+                            </div>
+                        </td>
+                        <td>
+                           Le client  devra confirmer son voyage par sa présence à l’agence au moins  30 minutes avant le départ du bus sinon sa réservation sera tout simplement annulée.
+                        </td>
+                    </tr>
+                </table>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>

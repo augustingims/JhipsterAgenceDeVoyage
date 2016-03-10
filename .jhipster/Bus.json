@@ -1,0 +1,31 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "voyage",
+            "otherEntityName": "voyage",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "bus"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "nom_bus",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "immatriculation",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "marque",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20160222183108",
+    "dto": "no",
+    "pagination": "pager"
+}

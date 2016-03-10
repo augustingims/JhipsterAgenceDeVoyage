@@ -1,0 +1,62 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myClientLabel" translate="agenceDeVoyageApp.client.home.createOrEditLabel">Create or edit a Client</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="client.id" readonly />
+        </div>
+        <div class="form-group">
+            <label translate="agenceDeVoyageApp.client.num_cni" for="field_num_cni">Num_cni</label>
+            <input type="number" class="form-control" name="num_cni" id="field_num_cni"
+                    ng-model="client.num_cni"
+                     />
+        </div>
+        <div class="form-group">
+            <label translate="agenceDeVoyageApp.client.nom_client" for="field_nom_client">Nom_client</label>
+            <input type="text" class="form-control" name="nom_client" id="field_nom_client"
+                    ng-model="client.nom_client"
+                     />
+        </div>
+        <div class="form-group">
+            <label translate="agenceDeVoyageApp.client.prenom_client" for="field_prenom_client">Prenom_client</label>
+            <input type="text" class="form-control" name="prenom_client" id="field_prenom_client"
+                    ng-model="client.prenom_client"
+                     />
+        </div>
+        <div class="form-group">
+            <label translate="agenceDeVoyageApp.client.profession" for="field_profession">Profession</label>
+            <input type="text" class="form-control" name="profession" id="field_profession"
+                    ng-model="client.profession"
+                     />
+        </div>
+        <div class="form-group">
+            <label translate="agenceDeVoyageApp.client.date_delivrance" for="field_date_delivrance">Date_delivrance</label>
+            <input type="text" class="form-control" name="date_delivrance" id="field_date_delivrance"
+                    ng-model="client.date_delivrance"
+                     />
+        </div>
+
+        <!--<div class="form-group">
+            <label translate="agenceDeVoyageApp.client.secretaire" for="field_secretaire">secretaire</label>
+            <select class="form-control" id="field_secretaire" name="secretaire" ng-model="client.secretaire" ng-options="secretaire as secretaire.nom_secretaire for secretaire in secretaires | orderBy:'id' track by secretaire.id">
+                <option value=""></option>
+            </select>
+        </div>-->
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || editForm.$submitted" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

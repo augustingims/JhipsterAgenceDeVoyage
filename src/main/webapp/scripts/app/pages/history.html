@@ -1,0 +1,40 @@
+<div class="section section-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1> Listes Des Clients Ayant Payés De Ticket</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Shopping Cart Items -->
+                        <table class="shopping-cart">
+                            <!-- Shopping Cart Item -->
+                            <tr ng-repeat="list in listes">
+                                <!-- Shopping Cart Item Image -->
+                                <td class="image"><a href="">
+                                    <img src="../../images/avatar.gif" alt="Item Name" style="width: 60px;height: 60px;"></a></td>
+                                <!-- Shopping Cart Item Description & Features -->
+                                <td>
+                                    <div class="cart-item-title"><a href="">{{list.nom_client}}   {{list.prenom_client}}</a></div>
+                                    <div class="feature color">
+                                        Num_CNI : {{list.num_cni}}
+                                    </div>
+                                    <div class="feature">Date Delivrance: <b>{{list.date_delivrance}}</b></div>
+                                </td>
+                                <td class="actions">
+                                    <a href="#" class="btn btn-xs btn-grey"><i class="glyphicon glyphicon-trash"></i></a>
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- End Shopping Cart Items -->
+                    </div>
+                </div>
+            </div>
+        </div>

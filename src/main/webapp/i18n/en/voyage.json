@@ -1,0 +1,28 @@
+{
+    "agenceDeVoyageApp": {
+        "voyage" : {
+            "home": {
+                "title": "Voyages",
+                "createLabel": "Create a new Voyage",
+                "createOrEditLabel": "Create or edit a Voyage"
+            },
+            "created": "A new Voyage is created with identifier {{ param }}",
+            "updated": "A Voyage is updated with identifier {{ param }}",
+            "deleted": "A Voyage is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Voyage {{ id }}?"
+            },
+            "detail": {
+                "title": "Voyage"
+            },
+            "date": "Date",
+            "ville_depart": "Ville_depart",
+            "ville_arrivee": "Ville_arrivee",
+            "heure_depart": "Heure_depart",
+            "heure_arrivee": "Heure_arrivee",
+            "ticket": "Ticket",
+            "bus": "Bus",
+            "chauffeur": "Chauffeur"
+        }
+    }
+}

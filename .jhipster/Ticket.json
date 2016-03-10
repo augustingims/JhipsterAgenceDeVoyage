@@ -1,0 +1,56 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "client",
+            "otherEntityName": "client",
+            "relationshipType": "one-to-one",
+            "otherEntityField": "nom_client",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "ticket"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "caissiere",
+            "otherEntityName": "caissiere",
+            "relationshipType": "one-to-one",
+            "otherEntityField": "nom_caissiere",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "ticket"
+        },
+        {
+            "relationshipId": 3,
+            "relationshipName": "voyage",
+            "otherEntityName": "voyage",
+            "relationshipType": "one-to-one",
+            "otherEntityField": "date",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "ticket"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "nature",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "type",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "prix",
+            "fieldType": "Double"
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "numero",
+            "fieldType": "Long"
+        }
+    ],
+    "changelogDate": "20160222181713",
+    "dto": "no",
+    "pagination": "pager"
+}

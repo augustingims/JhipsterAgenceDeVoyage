@@ -1,0 +1,54 @@
+
+<div style="background-color: whitesmoke;">
+    <h2><span translate="agenceDeVoyageApp.responsable.detail.title">Responsable</span> {{responsable.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="agenceDeVoyageApp.responsable.nom_responsable">Nom_responsable</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{responsable.nom_responsable}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="agenceDeVoyageApp.responsable.prenom_responsable">Prenom_responsable</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{responsable.prenom_responsable}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="agenceDeVoyageApp.responsable.tel_responsable">Tel_responsable</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{responsable.tel_responsable}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="agenceDeVoyageApp.responsable.adresse_responsable">Adresse_responsable</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{responsable.adresse_responsable}}</span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

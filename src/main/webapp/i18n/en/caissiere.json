@@ -1,0 +1,25 @@
+{
+    "agenceDeVoyageApp": {
+        "caissiere" : {
+            "home": {
+                "title": "Caissieres",
+                "createLabel": "Create a new Caissiere",
+                "createOrEditLabel": "Create or edit a Caissiere"
+            },
+            "created": "A new Caissiere is created with identifier {{ param }}",
+            "updated": "A Caissiere is updated with identifier {{ param }}",
+            "deleted": "A Caissiere is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Caissiere {{ id }}?"
+            },
+            "detail": {
+                "title": "Caissiere"
+            },
+            "nom_caissiere": "Nom_caissiere",
+            "prenom_caissiere": "Prenom_caissiere",
+            "tel_caissiere": "Tel_caissiere",
+            "adresse_caissiere": "Adresse_caissiere",
+            "ticket": "Ticket"
+        }
+    }
+}

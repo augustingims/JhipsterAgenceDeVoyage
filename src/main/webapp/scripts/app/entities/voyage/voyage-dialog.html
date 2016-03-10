@@ -1,0 +1,68 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myVoyageLabel" translate="agenceDeVoyageApp.voyage.home.createOrEditLabel">Create or edit a Voyage</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="voyage.id" readonly />
+        </div>
+        <div class="form-group">
+            <label translate="agenceDeVoyageApp.voyage.date" for="field_date">Date</label>
+            <input type="date" class="form-control" name="date" id="field_date"
+                    ng-model="voyage.date"
+                     />
+        </div>
+        <div class="form-group">
+            <label translate="agenceDeVoyageApp.voyage.ville_depart" for="field_ville_depart">Ville_depart</label>
+            <input type="text" class="form-control" name="ville_depart" id="field_ville_depart"
+                    ng-model="voyage.ville_depart"
+                     />
+        </div>
+        <div class="form-group">
+            <label translate="agenceDeVoyageApp.voyage.ville_arrivee" for="field_ville_arrivee">Ville_arrivee</label>
+            <input type="text" class="form-control" name="ville_arrivee" id="field_ville_arrivee"
+                    ng-model="voyage.ville_arrivee"
+                     />
+        </div>
+        <div class="form-group">
+            <label translate="agenceDeVoyageApp.voyage.heure_depart" for="field_heure_depart">Heure_depart</label>
+            <input type="text" class="form-control" name="heure_depart" id="field_heure_depart"
+                    ng-model="voyage.heure_depart"
+                     />
+        </div>
+        <div class="form-group">
+            <label translate="agenceDeVoyageApp.voyage.heure_arrivee" for="field_heure_arrivee">Heure_arrivee</label>
+            <input type="text" class="form-control" name="heure_arrivee" id="field_heure_arrivee"
+                    ng-model="voyage.heure_arrivee"
+                     />
+        </div>
+
+        <div class="form-group">
+            <label translate="agenceDeVoyageApp.voyage.bus" for="field_bus">bus</label>
+            <select class="form-control" id="field_bus" name="bus" ng-model="voyage.bus" ng-options="bus as bus.nom_bus for bus in buss | orderBy:'id' track by bus.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label translate="agenceDeVoyageApp.voyage.chauffeur" for="field_chauffeur">chauffeur</label>
+            <select class="form-control" id="field_chauffeur" name="chauffeur" ng-model="voyage.chauffeur" ng-options="chauffeur as chauffeur.nom_chauffeur for chauffeur in chauffeurs | orderBy:'id' track by chauffeur.id">
+                <option value=""></option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || editForm.$submitted" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

@@ -1,0 +1,50 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myCaissiereLabel" translate="agenceDeVoyageApp.caissiere.home.createOrEditLabel">Create or edit a Caissiere</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="caissiere.id" readonly />
+        </div>
+        <div class="form-group">
+            <label translate="agenceDeVoyageApp.caissiere.nom_caissiere" for="field_nom_caissiere">Nom_caissiere</label>
+            <input type="text" class="form-control" name="nom_caissiere" id="field_nom_caissiere"
+                    ng-model="caissiere.nom_caissiere"
+                     />
+        </div>
+        <div class="form-group">
+            <label translate="agenceDeVoyageApp.caissiere.prenom_caissiere" for="field_prenom_caissiere">Prenom_caissiere</label>
+            <input type="text" class="form-control" name="prenom_caissiere" id="field_prenom_caissiere"
+                    ng-model="caissiere.prenom_caissiere"
+                     />
+        </div>
+        <div class="form-group">
+            <label translate="agenceDeVoyageApp.caissiere.tel_caissiere" for="field_tel_caissiere">Tel_caissiere</label>
+            <input type="number" class="form-control" name="tel_caissiere" id="field_tel_caissiere"
+                    ng-model="caissiere.tel_caissiere"
+                     />
+        </div>
+        <div class="form-group">
+            <label translate="agenceDeVoyageApp.caissiere.adresse_caissiere" for="field_adresse_caissiere">Adresse_caissiere</label>
+            <input type="text" class="form-control" name="adresse_caissiere" id="field_adresse_caissiere"
+                    ng-model="caissiere.adresse_caissiere"
+                     />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || editForm.$submitted" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

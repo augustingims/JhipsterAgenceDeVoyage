@@ -1,0 +1,54 @@
+
+<div style="background-color: whitesmoke;">
+    <h2><span translate="agenceDeVoyageApp.chauffeur.detail.title">Chauffeur</span> {{chauffeur.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="agenceDeVoyageApp.chauffeur.nom_chauffeur">Nom_chauffeur</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{chauffeur.nom_chauffeur}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="agenceDeVoyageApp.chauffeur.prenom_chauffeur">Prenom_chauffeur</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{chauffeur.prenom_chauffeur}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="agenceDeVoyageApp.chauffeur.tel_chauffeur">Tel_chauffeur</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{chauffeur.tel_chauffeur}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="agenceDeVoyageApp.chauffeur.adresse_chauffeur">Adresse_chauffeur</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{chauffeur.adresse_chauffeur}}</span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

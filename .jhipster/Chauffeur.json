@@ -1,0 +1,36 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "voyage",
+            "otherEntityName": "voyage",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "chauffeur"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "nom_chauffeur",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "prenom_chauffeur",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "tel_chauffeur",
+            "fieldType": "Long"
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "adresse_chauffeur",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20160222183548",
+    "dto": "no",
+    "pagination": "pager"
+}
