@@ -96,6 +96,7 @@ public class ClientResource {
         Client page = clientRepository.findById(id);
         page.setTicket(true);
         page.setReserver(false);
+        page.setDemande(false);
         clientRepository.save(page);
     }
     /**
