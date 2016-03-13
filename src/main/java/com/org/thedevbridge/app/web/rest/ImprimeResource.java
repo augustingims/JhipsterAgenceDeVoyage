@@ -3,6 +3,7 @@ package com.org.thedevbridge.app.web.rest;
 import com.codahale.metrics.annotation.Timed;
 import com.org.thedevbridge.app.domain.Imprime;
 import com.org.thedevbridge.app.repository.ImprimeRepository;
+import com.org.thedevbridge.app.service.ImprimeService;
 import com.org.thedevbridge.app.web.rest.util.HeaderUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,6 +29,8 @@ public class ImprimeResource {
 
     @Inject
     private ImprimeRepository imprimeRepository;
+    @Inject
+    private ImprimeService imprimeService;
 
     /**
      * POST  /tickets -> Create a new ticket.
@@ -57,6 +60,31 @@ public class ImprimeResource {
     public List<Imprime> getAllTickets() {
         List<Imprime> page = imprimeRepository.findAll();
         return page;
+    }
+    /**
+     * SETIMPRESSION.
+     */
+    @RequestMapping(value = "/setimprimer/{id}",
+        method = RequestMethod.PUT,
+        produces = MediaType.APPLICATION_JSON_VALUE)
+    @Timed
+    public void setValImpression(@PathVariable Long id) {
+
+        Imprime imprime = imprimeRepository.findById(id);
+        imprime.setImpression(true);
+        imprimeRepository.save(imprime);
+
+    }
+    /**
+     * IMPRESSION.
+     */
+    @RequestMapping(value = "/imprimer/{id}",
+        method = RequestMethod.GET,
+        produces = MediaType.APPLICATION_JSON_VALUE)
+    @Timed
+    public void impression(@PathVariable Long id) {
+        setValImpression(id);
+        imprimeService.imprimer(id);
     }
 
     /**

@@ -15,7 +15,7 @@
             <!-- Pricing Plans Wrapper -->
             <div class="pricing-wrapper col-md-12">
                 <!-- Pricing Plan -->
-                <div class="pricing-plan" ng-repeat="ticket in imprimes">
+                <div class="pricing-plan" ng-repeat="ticket in imprimes" ng-show="ticket.impression == false ">
                     <!-- Pricing Plan Ribbon -->
                     <div class="ribbon-wrapper">
                         <div ng-class="getRuban('{{ticket.nature}}')">{{ticket.nature}}</div>
@@ -53,7 +53,7 @@
                             {{ticket.numero}}
                         </li>
                     </ul>
-                    <a href="#" class="btn">Imprimer</a>
+                    <a ng-click="impression(ticket.id)" class="btn">Imprimer</a>
                 </div>
             </div>
             <!-- End Pricing Plans Wrapper -->

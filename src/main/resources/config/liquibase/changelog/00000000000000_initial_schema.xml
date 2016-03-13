@@ -64,6 +64,9 @@
             <column name="ville_arrivee" type="varchar(255)"/>
             <column name="heure_depart" type="varchar(255)"/>
             <column name="nom_bus" type="varchar(255)"></column>
+            <column name="impression" type="boolean" valueBoolean="false">
+                <constraints nullable="false"/>
+            </column>
         </createTable>
 
         <createIndex indexName="idx_user_login"

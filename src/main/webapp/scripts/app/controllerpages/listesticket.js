@@ -2,7 +2,7 @@
 
 angular.module('agenceDeVoyageApp').controller('ListesticketController',
 
-        function($scope,$http) {
+        function($scope,$http,$state,$timeout) {
 
             $scope.imprimes = [];
 
@@ -22,5 +22,17 @@ angular.module('agenceDeVoyageApp').controller('ListesticketController',
                 return "price-ribbon "+"ribbon-green";
                 }
             };
+            $scope.impression = function(id){
+
+                $http.get("api/imprimer/"+id).success(function(response){
+                    console.log("impression réussie");
+                }).error(function(reason){
+                    console.log(reason);
+                });
+                $state.go("ok");
+                $timeout(function() {
+                    $state.go("listesticket",{reload:true});
+                }, 3000);
+            }
 
         });

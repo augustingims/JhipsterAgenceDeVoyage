@@ -46,6 +46,9 @@ public class Imprime implements Serializable {
     @Column(name = "nom_bus")
     private String nom_bus;
 
+    @Column(name = "impression")
+    private boolean impression;
+
     public Long getId() {
         return id;
     }
@@ -124,6 +127,14 @@ public class Imprime implements Serializable {
 
     public void setNom_bus(String nom_bus) {
         this.nom_bus = nom_bus;
+    }
+
+    public boolean isImpression() {
+        return impression;
+    }
+
+    public void setImpression(boolean impression) {
+        this.impression = impression;
     }
 
     @Override
