@@ -44,8 +44,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 public class VoyageResourceTest {
 
 
-    private static final LocalDate DEFAULT_DATE = LocalDate.ofEpochDay(0L);
-    private static final LocalDate UPDATED_DATE = LocalDate.now(ZoneId.systemDefault());
+    private static final String DEFAULT_DATE = "AAAAA";
+    private static final String UPDATED_DATE = "BBBBB";
     private static final String DEFAULT_VILLE_DEPART = "AAAAA";
     private static final String UPDATED_VILLE_DEPART = "BBBBB";
     private static final String DEFAULT_VILLE_ARRIVEE = "AAAAA";

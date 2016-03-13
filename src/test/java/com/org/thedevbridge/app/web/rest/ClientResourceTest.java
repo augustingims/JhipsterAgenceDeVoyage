@@ -53,8 +53,8 @@ public class ClientResourceTest {
     private static final String DEFAULT_PROFESSION = "AAAAA";
     private static final String UPDATED_PROFESSION = "BBBBB";
 
-    private static final LocalDate DEFAULT_DATE_DELIVRANCE = LocalDate.ofEpochDay(0L);
-    private static final LocalDate UPDATED_DATE_DELIVRANCE = LocalDate.now(ZoneId.systemDefault());
+    private static final String DEFAULT_DATE_DELIVRANCE = "AAAAA";
+    private static final String UPDATED_DATE_DELIVRANCE = "BBBBB";
 
     @Inject
     private ClientRepository clientRepository;
